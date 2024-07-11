@@ -74,3 +74,23 @@ h4{
     color: var(--blanco);
     margin-top: 5rem;
 }
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        color: var(--blanco);
+    }
+
+    .logo__nombre{
+        font-weight: 400;
+    }
+
+    .logo__bold{
+        font-weight: 700;
+    }
+}
