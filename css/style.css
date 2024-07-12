@@ -69,10 +69,29 @@ h4{
     background-position: center center;
 }
 
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
 .header__texto{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
 }
 
 @media (min-width: 768px){
@@ -82,15 +101,13 @@ h4{
         justify-content: space-between;
     }
 
-    .logo{
-        color: var(--blanco);
+    .navegacion{
+        display: flex;
+        gap: 2rem;
     }
 
-    .logo__nombre{
-        font-weight: 400;
+    .header__texto{
+        margin-top: 10rem;
     }
 
-    .logo__bold{
-        font-weight: 700;
-    }
 }
