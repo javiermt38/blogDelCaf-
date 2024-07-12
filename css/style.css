@@ -5,6 +5,7 @@
     --primario: #784D3C;
     --blanco: #FFF;
     --negro: #000;
+    --gris: #e1e1e1;
 }
 
 html{
@@ -23,7 +24,7 @@ body{
 }
 
 .contenedor{
-
+    
 }
 
 a{
@@ -50,6 +51,9 @@ h4{
     font-size: 2.8rem;
 }
 
+img{
+    max-width: 100%;
+}
 /* Estilos usados para reutilizar */
 .no-margin{
     margin: 0;
@@ -94,6 +98,33 @@ h4{
     color: var(--blanco);
 }
 
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteEncabezado);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.boton__primario{
+    background-color: var(--negro);
+}
+/* estilos para el blog */
+
 @media (min-width: 768px){
     .barra{
         display: flex;
@@ -108,6 +139,18 @@ h4{
 
     .header__texto{
         margin-top: 10rem;
+    }
+
+    .contenido_principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+        
+    }
+
+    .boton{
+        display: inline-block;
+        
     }
 
 }
